@@ -26,7 +26,7 @@ def subtract(a, b):
 
     Args:
         a (int or float): The first number.
-        b (int or float): The second number to subtract.
+        b (int or float): The number to subtract from a.
 
     Returns:
         int or float: The difference between a and b.
@@ -66,10 +66,10 @@ def average(numbers):
     Calculates the average of a list of numbers.
 
     Args:
-        numbers (list): A list of numbers.
+        numbers (list): A list of numbers (int or float).
 
     Returns:
-        int or float: The average of the numbers in the list.
+        float: The average of the numbers in the list.
 
     Raises:
         TypeError: If the input is not a list or if the list contains non-numeric values.
