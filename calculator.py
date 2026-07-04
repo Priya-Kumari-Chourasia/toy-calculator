@@ -26,6 +26,6 @@ def average(numbers):
         raise ValueError("Cannot calculate average of an empty list")
     for num in numbers:
         if not isinstance(num, (int, float)):
-            raise TypeError("All numbers in the list must be numbers (int or float)")
+            raise TypeError("All elements in the list must be numbers (int or float)")
     total = sum(numbers)
     return total / len(numbers)
