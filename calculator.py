@@ -10,8 +10,8 @@ def subtract(a, b):
 
 
 def divide(a, b):
-    # BUG: no check for division by zero -- this will crash with a raw
-    # ZeroDivisionError instead of failing gracefully.
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
     return a / b
 
 
