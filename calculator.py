@@ -18,6 +18,8 @@ def divide(a, b):
 
 
 def average(numbers):
+    if not isinstance(numbers, list):
+        raise TypeError("The input to average must be a list")
     if len(numbers) == 0:
         raise ValueError("Cannot calculate average of an empty list")
     total = sum(numbers)
