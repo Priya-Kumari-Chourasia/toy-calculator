@@ -2,18 +2,58 @@
 
 
 def add(a, b):
+    """
+    Adds two numbers together.
+
+    Args:
+        a (int or float): The first number to add.
+        b (int or float): The second number to add.
+
+    Returns:
+        int or float: The sum of a and b.
+
+    Raises:
+        TypeError: If either a or b is not a number (int or float).
+    """
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError("Both arguments to add must be numbers (int or float)")
     return a + b
 
 
 def subtract(a, b):
+    """
+    Subtracts the second number from the first.
+
+    Args:
+        a (int or float): The first number.
+        b (int or float): The number to subtract from a.
+
+    Returns:
+        int or float: The difference between a and b.
+
+    Raises:
+        TypeError: If either a or b is not a number (int or float).
+    """
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError("Both arguments to subtract must be numbers (int or float)")
     return a - b
 
 
 def divide(a, b):
+    """
+    Divides the first number by the second.
+
+    Args:
+        a (int or float): The dividend.
+        b (int or float): The divisor.
+
+    Returns:
+        int or float: The quotient of a and b.
+
+    Raises:
+        TypeError: If either a or b is not a number (int or float).
+        ValueError: If b is zero.
+    """
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError("Both arguments to divide must be numbers (int or float)")
     if b == 0:
@@ -22,6 +62,19 @@ def divide(a, b):
 
 
 def average(numbers):
+    """
+    Calculates the average of a list of numbers.
+
+    Args:
+        numbers (list): A list of numbers (int or float).
+
+    Returns:
+        float: The average of the numbers in the list.
+
+    Raises:
+        TypeError: If the input is not a list or if the list contains non-numeric values.
+        ValueError: If the input list is empty.
+    """
     if not isinstance(numbers, list):
         raise TypeError("The 'numbers' argument to average must be a list")
     if len(numbers) == 0:
