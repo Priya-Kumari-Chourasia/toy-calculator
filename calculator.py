@@ -8,6 +8,8 @@ def add(a, b):
 
 
 def subtract(a, b):
+    if isinstance(a, str) or isinstance(b, str):
+        raise TypeError("Both arguments to subtract must be numbers (int or float), not strings")
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError("Both arguments to subtract must be numbers (int or float)")
     return a - b
