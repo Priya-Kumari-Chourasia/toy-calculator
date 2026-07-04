@@ -46,5 +46,5 @@ def multiply_list(numbers):
 
 def power(base, exponent):
     if not isinstance(base, (int, float)) or not isinstance(exponent, (int, float)):
-        raise TypeError("Both the base and exponent must be numbers (int or float)")
+        raise TypeError("Both arguments to power must be numbers (int or float)")
     return base ** exponent
