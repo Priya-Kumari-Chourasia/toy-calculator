@@ -16,5 +16,7 @@ def divide(a, b):
 
 
 def average(numbers):
+    if len(numbers) == 0:
+        raise ValueError("Cannot calculate average of an empty list")
     total = sum(numbers)
     return total / len(numbers)
