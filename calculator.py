@@ -11,7 +11,15 @@ def subtract(a, b):
     return a - b
 
 
+def multiply(a, b):
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("Both arguments to multiply must be numbers (int or float)")
+    return a * b
+
+
 def divide(a, b):
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("Both arguments to divide must be numbers (int or float)")
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b
@@ -20,5 +28,8 @@ def divide(a, b):
 def average(numbers):
     if len(numbers) == 0:
         raise ValueError("Cannot calculate average of an empty list")
+    for number in numbers:
+        if not isinstance(number, (int, float)):
+            raise TypeError("All elements in the list must be numbers (int or float)")
     total = sum(numbers)
     return total / len(numbers)
