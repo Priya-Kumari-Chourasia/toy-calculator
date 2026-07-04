@@ -3,7 +3,7 @@
 
 def add(a, b):
     """
-    Adds two numbers.
+    Adds two numbers together.
 
     Args:
         a (int or float): The first number to add.
@@ -22,11 +22,11 @@ def add(a, b):
 
 def subtract(a, b):
     """
-    Subtracts one number from another.
+    Subtracts the second number from the first.
 
     Args:
-        a (int or float): The number to subtract from.
-        b (int or float): The number to subtract.
+        a (int or float): The first number.
+        b (int or float): The second number to subtract.
 
     Returns:
         int or float: The difference between a and b.
@@ -41,7 +41,7 @@ def subtract(a, b):
 
 def divide(a, b):
     """
-    Divides one number by another.
+    Divides the first number by the second.
 
     Args:
         a (int or float): The dividend.
